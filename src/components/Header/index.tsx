@@ -7,8 +7,10 @@ export function Header() {
   return (
     <HeaderContainer>
       <ContainerImage>
-        <img src={Logo} alt="" />
-        <p>Ignite timer</p>
+        <a href="https://github.com/thayronFeitosa/Ignite-timer">
+          <img src={Logo} alt="Ignite-timer" />
+          <p>Ignite timer</p>
+        </a>
       </ContainerImage>
       <nav>
         <NavLink to="" title="Timer">

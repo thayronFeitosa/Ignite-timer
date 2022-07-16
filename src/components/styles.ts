@@ -37,13 +37,34 @@ export const ContainerImage = styled.div`
   align-items: center;
   justify-content: center;
 
-  > p {
-    font-family: 'Roboto';
-    font-size: 30px;
-    margin-left: 5px;
-  }
+  a {
+    width: 100%;
+    height: 3rem;
 
-  > img {
-    width: 45px;
+    > p {
+      font-family: 'Roboto';
+      font-size: 30px;
+      margin-left: 5px;
+    }
+
+    > img {
+      width: 45px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ${(props) => props.theme['gray-100']};
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 3px solid ${(props) => props.theme['green-500']};
+    }
+
+    &.active {
+      color: ${(props) => props.theme['green-500']};
+    }
   }
 `
