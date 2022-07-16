@@ -30,3 +30,20 @@ export const HeaderContainer = styled.header`
     }
   }
 `
+
+export const ContainerImage = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  > p {
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
+  > img {
+    width: 45px;
+  }
+`
